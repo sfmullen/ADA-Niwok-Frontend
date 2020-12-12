@@ -7,9 +7,9 @@ import { fasArrowLeft } from '@fortawesome/free-solid-svg-icons' */
 const DescriptionProductView = () => {
     return (
         <React.Fragment>
-            <HeadProduct />
-            <DescriptionProduct />
-            <DowloadProduct />
+            {/*<HeadProduct />*/}
+            {/*<DescriptionProduct />*/}
+            {/*<DowloadProduct />*/}
             <button type="button" className="btn-back">
                 {/*  <FontAwesomeIcon icon={fasArrowLeft} /> */}
                 Volver a Productos

@@ -3,8 +3,10 @@
     flex-direction: row;
     justify-content: space-around;
 	align-items: center;
+	flex-wrap: wrap;
+
 	.product-container{
-		width: 50vw;
+		width: 40vw;
 	}
 	
 }

@@ -9,6 +9,8 @@ const ProductList = () => {
                 <Product />
                 <Product />
                 <Product />
+                <Product />
+                <Product />
             </section>
         </React.Fragment>
     )
