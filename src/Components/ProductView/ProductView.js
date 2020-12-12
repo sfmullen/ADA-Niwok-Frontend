@@ -1,8 +1,8 @@
 import React from "react";
 import './ProductView.scss';
 import ProductList from '../ProducList/ProductList';
-/* import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { fasArrowLeft } from '@fortawesome/free-solid-svg-icons' */
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
 
 const ProductView = () => {
@@ -13,13 +13,12 @@ const ProductView = () => {
                     <h1>Tu comunidad tiene:</h1>
                     <h1>PRODUTOS SOLICITADOS:</h1>
                 </div>
-                <ProductList /> {/* Aca iria en realidad ProductList */}
-
-                <button type="button" className="btn-back">
-                    {/* <FontAwesomeIcon icon={fasArrowLeft} /> */}
-                Volver a Comunidades
-            </button>
+                <ProductList />
             </section>
+            <button type="button" className="btn-back">
+                <FontAwesomeIcon icon={faArrowLeft} className="icon" />
+                VOLVER A COMUNIDADES
+            </button>
         </React.Fragment>
     )
 };
