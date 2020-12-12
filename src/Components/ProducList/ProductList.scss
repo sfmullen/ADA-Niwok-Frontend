@@ -1,0 +1,10 @@
+.ProductList-Container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+	align-items: center;
+	.product-container{
+		width: 50vw;
+	}
+	
+}

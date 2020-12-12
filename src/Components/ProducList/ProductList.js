@@ -1,12 +1,15 @@
 import React from "react";
 import './ProductList.scss';
-
+import Product from '../Product/Product';
 
 const ProductList = () => {
     return (
         <React.Fragment>
-           {/* <h1>Tu comunidad tiene los siguientes productos solicitados:</h1> */}
-            {/* <Product /> */}
+            <section className="ProductList-Container">
+                <Product />
+                <Product />
+                <Product />
+            </section>
         </React.Fragment>
     )
 };

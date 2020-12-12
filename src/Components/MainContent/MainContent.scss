@@ -1,15 +1,8 @@
-.Main{
-     margin:0px;
-    .Main-header{
-    width:100vw;
-    height: 80px;
-    background-color: #f3e7e0;
-    border-radius: 0px 0px 50px 50px;
-.header-title{
-    font-size: 18px;
-    letter-spacing: 3px; 
-    text-align: center;
-    padding-top: 28px;
-        }
-    }
+.Main-container{
+    width: 100vw;
+  	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    align-content: space-around;
 }

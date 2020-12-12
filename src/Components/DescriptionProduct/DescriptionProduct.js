@@ -1,15 +1,15 @@
 import React from "react";
-import './DescrptionProduct.scss';
+import './DescriptionProduct.scss';
 {/*import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { fasArrowLeft} from '@fortawesome/free-solid-svg-icons'*/}
 
 
-const DescrptionProduct = () => {
+const DescriptionProduct = () => {
     return (
         <React.Fragment>
- 
+
         </React.Fragment>
     )
 };
 
-export default DescrptionProduct;
+export default DescriptionProduct;
