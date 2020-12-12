@@ -1,0 +1,47 @@
+.overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #f3e7e0;
+    width: 100vw;
+    height: 100vh;
+    padding:10px;
+    margin:0;
+}
+
+.modal{
+    width: 600px;
+    z-index: 100;
+    position: fixed;
+    left: calc(50vw - 300px);
+    top: 30vw;
+    /* border-radius: 4px; */
+    /* padding: 15px; */
+    box-sizing: border-box;
+ /*    color: black; */
+    header {
+    display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+    text-align: center;
+        h2 {
+            margin : 0;
+            letter-spacing: 5px;
+            padding: 10px;
+            text-align: center;
+        }
+        p{
+            font-size: 20px;
+            letter-spacing: 3px; 
+            &:nth-child(1){
+            margin-left: -103px;
+            }
+        }   
+        img{
+            position: relative;
+            width:180px;
+            top: 200px;
+        }
+    }
+}

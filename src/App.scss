@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color:#fffbf8;
+    color: rgb(35, 39, 42);
+    font-weight: 300;
+}
+
+.modal-efecto{
+    transition: left 300ms linear;
+}
