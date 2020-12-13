@@ -26,7 +26,7 @@ const MainContent = () => {
                         <Route exact path="/searchresults/:value">
                             <SearchView />
                         </Route>
-                        <Route exact path="/Comunidad">
+                        <Route exact path="/Comunidad/:value">
                             <ProductView />
                         </Route>
                         <Route exact path="/DescripcionProducto">

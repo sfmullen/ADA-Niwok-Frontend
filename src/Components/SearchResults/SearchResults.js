@@ -5,7 +5,7 @@ import ButtonListSearch from "../ButtonListSearch/ButtonListSearch";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import {
-    Link
+	Link
 } from 'react-router-dom';
 
 const SearchResults = () => {
