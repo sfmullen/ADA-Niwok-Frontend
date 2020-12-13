@@ -16,7 +16,7 @@ const SearchResults = () => {
 			<ButtonListSearch
 				endpoint={`https://ada-niwok.herokuapp.com/comunidades/${value}`}
 			/>		
-			<Link to="/">
+			<Link to="/" className="btn-back">
 				<button type="button" className="btn-back">
                 <FontAwesomeIcon icon={faArrowLeft} className="icon" />
                 VOLVER A COMUNIDADES
