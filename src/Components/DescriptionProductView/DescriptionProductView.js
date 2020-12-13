@@ -24,6 +24,3 @@ const DescriptionProductView = () => {
 };
 
 export default DescriptionProductView;
-
-
-

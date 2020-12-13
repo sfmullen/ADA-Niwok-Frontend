@@ -4,11 +4,10 @@ import {
     BrowserRouter,
     Switch,
     Route,
-    Link
 } from 'react-router-dom';
 import Header from "../Header/Header";
 import SearchView from '../SearchView/SearchView';
-import DescriptionProductView from '../DescriptionProducWiew/DescriptionProductView';
+import DescriptionProductView from '../DescriptionProductView/DescriptionProductView';
 import ProductView from '../ProductView/ProductView';
 
 
