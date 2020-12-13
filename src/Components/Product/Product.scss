@@ -1,7 +1,7 @@
 .product-container {
   display: flex;
   flex-direction: column;
-  width: 45%;
+  width: 90%;
   height: auto;
   margin: 5px;
   .product-details {
@@ -51,7 +51,7 @@
   }
 }
 
-@media (min-width: 700px) {
+/* @media (min-width: 700px) {
   .product-container {
     display: flex;
     flex-direction: column;
@@ -60,7 +60,7 @@
     margin: 5px;
   }
 }
-
+ */
 // .product-container {
 //   display: flex;
 //   flex-direction: column;
