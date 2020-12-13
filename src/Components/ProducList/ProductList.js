@@ -2,10 +2,12 @@ import React, { useState, useEffect } from "react";
 import './ProductList.scss';
 import Product from '../Product/Product';
 import axios from 'axios';
+import { useParams } from "react-router";
 
 
 const ProductList = () => {
     const [products, setProducts] = useState([]);
+    const { value } = useParams();
 
     /*  const getProducts = async () => {
          try {
@@ -21,7 +23,7 @@ const ProductList = () => {
      }; */
 
     useEffect(() => {
-        axios.get(`https://ada-niwok.herokuapp.com/pedidos/comunidad/5`)
+        axios.get(`https://ada-niwok.herokuapp.com/pedidos/comunidad/${value}`)
             .then(res => {
                 setProducts(res.data.pedido);
             })
