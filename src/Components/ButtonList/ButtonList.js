@@ -35,7 +35,6 @@ class ButtonList extends Component {
 	// 	});
     // }
 
-
 	
 	render() {
         const { communities } = this.state;

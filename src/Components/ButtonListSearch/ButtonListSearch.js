@@ -24,18 +24,16 @@ class ButtonListSearch extends Component {
         });    
     }
     
-    // componentWillUpdate() {
-	// 	const cargar = `${this.state.endpoint}`;
-	// 	console.log(cargar);
-	// 	axios.get(`${cargar}`).then((res) => {
-	// 		const com = res.data.results;
-	// 		this.setState({
-	// 			communities: com,
-	// 		});
-	// 	});
-    // }
-
-
+    componentDidUpdate() {
+		const cargar = `${this.props.endpoint}`;
+		console.log(cargar);
+		axios.get(`${cargar}`).then((res) => {
+			const com = res.data.comunidad;
+			this.setState({
+				communities: com,
+			});
+		});
+	}
 	
 	render() {
         const { communities } = this.state;

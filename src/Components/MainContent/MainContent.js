@@ -7,8 +7,10 @@ import {
 } from 'react-router-dom';
 import Header from "../Header/Header";
 import SearchView from "../SearchView/SearchView";
-import DescriptionProductView from '../DescriptionProducWiew/DescriptionProductView';
+import DescriptionProductView from '../DescriptionProductView/DescriptionProductView';
 import ProductView from '../ProductView/ProductView';
+import Communities from "../Communities/Communities";
+
 
 
 const MainContent = () => {
@@ -19,6 +21,9 @@ const MainContent = () => {
                 <section className="Main-container">
                     <Switch>
                         <Route exact path="/">
+                            <Communities />
+                        </Route>
+                        <Route exact path="/searchresults/:value">
                             <SearchView />
                         </Route>
                         <Route exact path="/Comunidad">

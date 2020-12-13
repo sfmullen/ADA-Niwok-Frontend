@@ -1,15 +1,19 @@
 import React from "react";
 import ButtonList from "../ButtonList/ButtonList";
-import ButtonListSearch from "../ButtonListSearch/ButtonListSearch"
+import Search from "../Search/Search";
 
 
 const Communities = () => {
 	return (
 		<section className="main">
-			{/* <ButtonList
+			<Search />
+			{/* si no uso el buscador */}
+			<ButtonList
 				endpoint="https://ada-niwok.herokuapp.com/comunidades/"
-			/> */}
-			<ButtonListSearch endpoint="https://ada-niwok.herokuapp.com/comunidades/1"/>
+			/>
+			{/* //si uso el buscador
+			<SearchResults />
+			//y searchview lo saco */}
 		</section>
 	);
 };

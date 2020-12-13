@@ -2,16 +2,22 @@ import React from "react";
 // import React, { useEffect } from "react";
 import { useParams } from "react-router";
 import ButtonListSearch from "../ButtonListSearch/ButtonListSearch";
+import {
+    Link
+} from 'react-router-dom';
 
 const SearchResults = () => {
 	const { value } = useParams();
 	// useEffect(() => {
 	
 	return (
-		<ButtonListSearch
+		<React.Fragment>
+			<ButtonListSearch
 				endpoint={`https://ada-niwok.herokuapp.com/comunidades/${value}`}
 			/>		
+			<Link to="/">Ver todas las comunidades</Link>
 			
+		</React.Fragment>
 	);
 	// }, [value]);
 };
