@@ -3,6 +3,7 @@ import ButtonList from "../ButtonList/ButtonList";
 import Search from "../Search/Search";
 
 
+
 const Communities = () => {
 	return (
 		<section className="main">

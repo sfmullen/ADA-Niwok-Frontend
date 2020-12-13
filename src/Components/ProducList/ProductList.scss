@@ -1,12 +1,7 @@
-.ProductList-Container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-	align-items: center;
-	flex-wrap: wrap;
-
-	.product-container{
-		width: 40vw;
-	}
-	
+.ProductList-Container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
 }

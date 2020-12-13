@@ -29,7 +29,7 @@ const MainContent = () => {
                         <Route exact path="/Comunidad/:value">
                             <ProductView />
                         </Route>
-                        <Route exact path="/DescripcionProducto">
+                        <Route exact path="/DescripcionProducto/:value">
                             <DescriptionProductView />
                         </Route>
                     </Switch>

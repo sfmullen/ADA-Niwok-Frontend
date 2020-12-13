@@ -3,24 +3,14 @@ import './ProductList.scss';
 import Product from '../Product/Product';
 import axios from 'axios';
 import { useParams } from "react-router";
+import {
+    Link
+} from 'react-router-dom';
 
 
 const ProductList = () => {
     const [products, setProducts] = useState([]);
     const { value } = useParams();
-
-    /*  const getProducts = async () => {
-         try {
-             const res = await axios.get(`https://ada-niwok.herokuapp.com/pedidos/comunidad/3`);
-             console.log(`que trae ${res.data, products}`)
-             setProducts(res.data);
-             console.log(`que trae ${res.data, products}`)
-             return res.data;
- 
-         } catch (err) {
-             alert(`Error getting products: ${err}`);
-         }
-     }; */
 
     useEffect(() => {
         axios.get(`https://ada-niwok.herokuapp.com/pedidos/comunidad/${value}`)
@@ -36,7 +26,11 @@ const ProductList = () => {
                 {
                     products.map(p => {
                         return (
-                            <Product key={p.id} title={p.name} foto={p.media} cantidad={p.cantidad} />
+                            <div>
+                                <Link to={`/DescripcionProducto/${p._id}`}>
+                                    <Product key={p._id} title={p.name} foto={p.media} cantidad={p.cantidad} />
+                                </Link>
+                            </div>
                         )
                     })
                 }

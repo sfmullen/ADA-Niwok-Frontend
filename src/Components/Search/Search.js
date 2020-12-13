@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import './Search.scss';
-//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-//import { faSearch } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { useHistory } from "react-router-dom";
 
 const Search = () => {
@@ -20,7 +20,7 @@ const Search = () => {
             <h3 className="search-title">¿De qué comunidad sos parte?</h3>
             <div className="search-container">
                 <button className="search-container-icon">
-					ICONO
+				<FontAwesomeIcon icon={faSearch} className="icon" />
 					</button>
                 <input
 				className="search-container-input" 
