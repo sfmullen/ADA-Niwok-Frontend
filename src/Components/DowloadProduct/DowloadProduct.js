@@ -1,7 +1,7 @@
 import React from "react";
 import './DowloadProduct.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faDownload} from '@fortawesome/free-solid-svg-icons'
+import { faDownload } from '@fortawesome/free-solid-svg-icons'
 
 
 const DowloadProduct = () => {

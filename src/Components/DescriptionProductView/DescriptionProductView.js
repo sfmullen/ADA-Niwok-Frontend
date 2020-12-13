@@ -6,14 +6,14 @@ import HeadProduct from '../HeadProduct/HeadProduct';
 import DescriptionProduct from '../DescriptionProduct/DescriptionProduct';
 import DowloadProduct from '../DowloadProduct/DowloadProduct';
 import axios from 'axios';
-/* import { useParams } from "react-router"; */
+import { useParams } from "react-router";
 
 const DescriptionProductView = () => {
     const [product, setProduct] = useState({});
-    /*  const { value } = useParams(); */
+    const { value } = useParams();
 
     useEffect(() => {
-        axios.get(`https://ada-niwok.herokuapp.com/pedidos/5fd50eb57b39fa280841b87a`)
+        axios.get(`https://ada-niwok.herokuapp.com/pedidos/${value}`)
             .then(res => {
                 setProduct(res.data.pedido);
                 console.log(`que trae ${res.data.pedido.name}`)
@@ -25,7 +25,7 @@ const DescriptionProductView = () => {
         <React.Fragment>
             <HeadProduct imagen={product.media} cantidad={product.cantidad} />
             <section className="container-product">
-                <DescriptionProduct name={product.name} descripcion={product.descripcion} imagen={product.media} especificaciones={product.especificaciones} />
+                <DescriptionProduct name={product.name} descripcion={product.descripcion} imagen={product.media} especificaciones={product.especificaciones} date={product.fechaDeEntrega} />
                 <DowloadProduct />
             </section>
             <button type="button" className="btn-back">

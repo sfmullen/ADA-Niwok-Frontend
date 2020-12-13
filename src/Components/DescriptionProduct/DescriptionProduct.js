@@ -4,7 +4,7 @@ import './DescriptionProduct.scss';
 import { fasArrowLeft} from '@fortawesome/free-solid-svg-icons'*/}
 
 
-const DescriptionProduct = ({ name, descripcion, imagen, especificaciones }) => {
+const DescriptionProduct = ({ name, descripcion, imagen, especificaciones, date }) => {
     return (
         <React.Fragment>
             <section>
@@ -24,11 +24,10 @@ const DescriptionProduct = ({ name, descripcion, imagen, especificaciones }) => 
                             <p>{especificaciones}</p>
                         </div>
                     </div>
-                    <p>En lo posible entregar antes de: <b>{'days'}</b> días</p>
+                    <date>En lo posible entregar antes de: <b>{date}</b></date>
                     {/*hacer una fórmula para restar días*/}
                 </div>
             </section>
-
         </React.Fragment>
     )
 };

@@ -4,7 +4,7 @@ import ProductList from '../ProducList/ProductList';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import {
-	Link
+    Link
 } from 'react-router-dom';
 
 
@@ -19,11 +19,11 @@ const ProductView = () => {
                 <ProductList />
             </section>
             <Link to="/" className="btn-back">
-				<button type="button" className="btn-back">
-                <FontAwesomeIcon icon={faArrowLeft} className="icon" />
+                <button type="button" className="btn-back">
+                    <FontAwesomeIcon icon={faArrowLeft} className="icon" />
                 VOLVER A COMUNIDADES
             </button>
-			</Link>
+            </Link>
         </React.Fragment>
     )
 };
