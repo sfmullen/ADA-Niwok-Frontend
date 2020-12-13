@@ -1,14 +1,16 @@
 import React from "react";
 import './SearchView.scss';
 import Search from "../Search/Search";
-import Button from "../Button/Button";
+import SearchResults from "../SearchResults/SearchResults";
+
 
 const SearchView = () => {
     return (
         <React.Fragment>
             <Search />
-            <Button />
+            <SearchResults />
         </React.Fragment>
+        
     )
 };
 

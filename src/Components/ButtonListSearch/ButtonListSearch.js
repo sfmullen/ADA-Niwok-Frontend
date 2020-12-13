@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Button from "../Button/Button";
 import axios from "axios";
 
-class ButtonList extends Component {
+class ButtonListSearch extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
@@ -16,25 +16,24 @@ class ButtonList extends Component {
 		const cargar = `${this.state.buscar}`;
 		console.log(cargar)
 		axios.get(`${cargar}`).then((res) => {
-			console.log(res.data.comunidades)
-			const com = res.data.comunidades;
+			console.log(res.data.comunidad)
+			const com = res.data.comunidad;
 			this.setState({
 				communities: com,
             });
         });    
     }
     
-    // componentWillUpdate() {
-	// 	const cargar = `${this.state.endpoint}`;
-	// 	console.log(cargar);
-	// 	axios.get(`${cargar}`).then((res) => {
-	// 		const com = res.data.results;
-	// 		this.setState({
-	// 			communities: com,
-	// 		});
-	// 	});
-    // }
-
+    componentDidUpdate() {
+		const cargar = `${this.props.endpoint}`;
+		console.log(cargar);
+		axios.get(`${cargar}`).then((res) => {
+			const com = res.data.comunidad;
+			this.setState({
+				communities: com,
+			});
+		});
+	}
 	
 	render() {
         const { communities } = this.state;
@@ -51,4 +50,4 @@ class ButtonList extends Component {
 	}
 }
 
-export default ButtonList;
+export default ButtonListSearch;

@@ -6,8 +6,8 @@ import Modal from './Components/Modal/Modal'
 const App = () => {
   return (
     <React.Fragment>
-      {/* <Modal classname="modal-efecto" /> */}
-      <MainContent />
+        <Modal classname="modal-efecto" />
+        <MainContent />
     </React.Fragment>
   );
 }
