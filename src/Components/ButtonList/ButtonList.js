@@ -23,18 +23,6 @@ class ButtonList extends Component {
             });
         });    
     }
-    
-    // componentWillUpdate() {
-	// 	const cargar = `${this.state.endpoint}`;
-	// 	console.log(cargar);
-	// 	axios.get(`${cargar}`).then((res) => {
-	// 		const com = res.data.results;
-	// 		this.setState({
-	// 			communities: com,
-	// 		});
-	// 	});
-    // }
-
 	
 	render() {
         const { communities } = this.state;
@@ -43,7 +31,6 @@ class ButtonList extends Component {
 			<ul className="movies__list">
 				{communities.map((u) => (
 					<Button coms={u} />
-					// pasarle la info aca a las peliculas y quye estas se las pasen el modal?
 				))}
 				
 			</ul>
