@@ -3,15 +3,15 @@ import './Product.scss';
 import foto from './img/foto.png';
 
 
-const Product = ({ productName, urlProduc, quantity }) => {
+const Product = ({ title, foto, cantidad }) => {
     return (
         <React.Fragment>
             <figure className="product-container">
-                {/* <img src={foto} className="img-product" /> */}
+                <img src={foto} className="img-product" />
                 <div className="quantity-product">
-                    <p>Cantidad:{quantity}</p>
+                    <p>Cantidad:{cantidad}</p>
                 </div>
-                <figcaption className="decription-product">{productName}</figcaption>
+                <figcaption className="decription-product">{title}</figcaption>
             </figure>
         </React.Fragment>
     )
