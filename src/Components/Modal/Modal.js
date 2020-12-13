@@ -6,7 +6,7 @@ import './Modal.scss';
 const Modal = () => {
     setTimeout(() => {
         document.getElementById('loader').className = 'loader hidden';
-    }, 3000)
+    }, 1500)
 
     return (
         <React.Fragment>
